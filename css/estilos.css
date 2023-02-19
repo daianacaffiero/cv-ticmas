@@ -1,0 +1,101 @@
+/* Estilo NavBar */ 
+.navlink{
+    color: black;
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+#nombre{
+    font-size: 30px;
+}
+.navlink:hover{
+    color: white;
+    background-color: darkgray;
+    border-radius: 50%;
+}
+
+/* Seccion Sobre mi */
+#sobremi {
+    background: url('../img/acuarela.jpg');
+    background-size:cover;
+    position: relative;
+    opacity: 0.92;
+    padding-top: 5px;
+}
+
+/* Img Sobre mi */
+.imageAboutPage {
+    width: 100%;
+    border-radius:250px;
+}
+
+li{
+    list-style: none;
+}
+
+/* Seccion Estudios */
+#estudios {
+    background: url(../img/textura.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.estudiosText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+
+.estudiosIcon {
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.card-title {
+    text-align: center;
+}
+.card:hover .estudiosIcon {
+    color: #B052A3;
+}
+.estudiosText:hover {
+    border: 1px solid #B052A3;
+}
+ /* Seccion Proyectos */
+#proyectos{
+    background: url(../img/hojas.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.btn-success{
+    background-color: darkgray;
+    border: none;
+}
+
+.btn-success:hover{
+    background-color: #B052A3;
+}
+
+/* Iconos redes sociales*/
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-user:hover, .fa-globe:hover, .fa-map-pin:hover, .fa-linkedin:hover, .fa-phone:hover, .fa-github:hover, .fa-github-square:hover, .fa-envelope:hover, .fa-mobile:hover {
+    color: #B052A3;
+}
+.fab, .fa {
+    color: rgb(138, 135, 135);
+}
+
+/* Seccion Footer */
+#footer {
+    background-color: #96D9C6;
+    text-align: center;
+}
+
+/* Espacio entre todas las secciones */
+#sobremi, #estudios, #proyectos{
+    margin-top: 4rem;
+    padding-top: 4rem;
+}

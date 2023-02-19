@@ -10,6 +10,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <!--Link Fontawesome-->
     <script src="https://kit.fontawesome.com/24d3b6d56b.js" crossorigin="anonymous"></script>
+    <!--BoxIcon-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!--Link Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <title>CV DAIANA BELEN CAFFIERO</title>
 </head>
@@ -18,11 +24,7 @@
   <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
       <div class="container">
-        <a class="navbar-brand navlink" href="#">Daiana Belén Caffiero</a>
-        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
-
+        <a class="navbar-brand navlink" id="nombre" href="#">Daiana Belén Caffiero</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -50,7 +52,7 @@
         <h1 class="text-center">Sobre Mi</h1>
         <div class="row mt-4">
             <div class="col-xl-4">
-                <img src="img/perfil.jpg" class= "imageAboutPage" alt="imagen de perfil">
+                <img src="img/foto.jpg" class= "imageAboutPage" alt="imagen de perfil">
             </div>
   
             <div class="col-lg-8">
@@ -58,9 +60,9 @@
                 <div class="row mt-3">
                     <div class="col-md-5">
                         <ul>
-                            <li><i class="fa fa-regular fa-user"></i> Daiana Belén Caffiero</li>
+                            <li style="list-style:none;"><i class="fa fa-regular fa-user"></i> Daiana Belén Caffiero</li>
                             <li><i class="fa fa-solid fa-globe"></i> Trainee Web Developer</li>
-                            <li><i class="fa fa-solid fa-location-dot"></i> Mar del Plata - Argentina</li>
+                            <li><i class="fa fa-solid fa-map-pin"></i> Mar del Plata - Argentina</li>
   
                         </ul>
                     </div>
@@ -83,16 +85,173 @@
 
   <!--SECTION ESTUDIOS-->
     <section id="estudios">
+      <div class="container">
+        <h1 class="text-center">Estudios</h1>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card estudiosText">
+                    <div class="card-body">
+                      <i class='estudiosIcon bx bx-code-alt'></i>
+                    <h4 class="card-title mt-3"> Desarrollo Web</h4>
+                    <p class="card-text mt-3">Curso Desarrollo Web - Argentina Programa 4.0, dictado por Academia Ticmas. Año 2023</p>
+                    </div>
+                </div>  
+            </div>
 
+            <div class="col-lg-4 mt-4">
+              <div class="card estudiosText">
+                <div class="card-body">
+                        <i class='estudiosIcon bx bxl-react'></i>
+                        <h4 class="card-title mt-3">FULLSTACK REACT GO</h4>
+                        <p class="card-text mt-3">Agencia de Aprendizaje a lo largo de la vida - Codo a Codo 4.0.Año 2022.</p>
+                </div>
+               </div>        
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card estudiosText">
+                    <div class="card-body">
+                        <i class='estudiosIcon bx bxl-python'></i>
+                        <h4 class="card-title mt-3">FULLSTACK PYTHON</h4>
+                        <p class="card-text mt-3">Agencia de Aprendizaje a lo largo de la vida - Codo a Codo 4.0.Año 2021.</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+            <div class="row">
+            <div class="col-lg-4 mt-4">
+              <div class="card estudiosText">
+                  <div class="card-body">
+                      <i class='estudiosIcon bx bxl-javascript'></i>
+                      <h4 class="card-title mt-3">JavaScript</h4>
+                      <p class="card-text mt-3">Curso Intensivo de JavaScript en el Centro de Formación CILSA - Mar del Plata, Año 2021.</p>
+                  </div>
+              </div>  
+            </div>
+      
+            <div class="col-lg-4 mt-4">
+                <div class="card estudiosText">
+                    <div class="card-body">
+                        <i class='estudiosIcon bx bx-expand-horizontal'></i>
+                        <h4 class="card-title mt-3">Diseño de paginas Web.</h4>
+                        <p class="card-text mt-3">Curso de Diseño y programación Web en el Centro de Formacion profesional "Malvinas Argentinas". Año 2020</p>
+                    </div>
+                </div>  
+            </div>
+  
+  
+            <div class="col-lg-4 mt-4">
+                <div class="card estudiosText">
+                    <div class="card-body">
+                        <i class='estudiosIcon bx bx-book'></i>
+                        <h4 class="card-title mt-3">Lengua y cultura Portuguesa <br> Nivel A1-A2</h4>
+                        <p class="card-text mt-3">Curso de idioma Portugues Europeo, en el Club Portugues Mar del Plata.</p>
+                    </div>
+                </div>  
+            </div>          
+        </div>
+      </div>
     </section>
 
   <!--SECTION PROYECTOS-->
     <section id="proyectos">
-
+      <div class="container mt-3">
+        <h1 class="text-center">Proyectos</h1>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/proyect1.png" alt="pagina Apolo" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Apolo Barber Service</h4>
+                        <p class="card-text">Página de práctica para el curso de Full-Stack Python, de la Agencia de Aprendizaje a lo largo de la vida. Utilizando HTML,CSS,Bootstrap y otras librerias de animación, texto, iconos, etc. Año 2021.</p>
+                        <div class="text-center">
+                            <a href="https://apolobarberservice.netlify.app" class="btn btn-success">Abrir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="img/recetas.png" alt="Pagina Recetas" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Cocina Sin Lactosa</h4>
+                        <p class="card-text">Página de práctica para el curso de Full-Stack Python, de la Agencia de Aprendizaje a lo largo de la vida. Utilizando HTML,CSS,Bootstrap, JavaScript y otras librerias de animación, texto, iconos, etc.Año 2021.</p>
+                        <div class="text-center">
+                            <a href="https://cocinasinlactosa.netlify.app" class="btn btn-success">Abrir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+            <div class="col-lg-4 mt-4">
+              <div class="card portfolioContent">
+                  <img class="card-img-top" src="img/trivia.png" alt="Trivia Vainilla" style="width:100%">
+                  <div class="card-body">
+                      <h4 class="card-title">Trivia Vainilla</h4>
+                      <p class="card-text">Trivia colaborativa, de práctica con JavaScript Vainilla.</p>
+                      <div class="text-center">
+                          <a href="https://trivia-vainilla.netlify.app/" class="btn btn-success">Abrir</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="img/calcu.png" alt="Calculadora" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Calculadora</h4>
+                        <p class="card-text">Calculadora Simple a partir de HTML, CSS y algunas librerias de estilos.</p>
+                        <div class="text-center">
+                            <a href="https://calculadorasimple.netlify.app/" class="btn btn-success">Abrir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="img/reloj.png" alt="Reloj Digital" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Reloj Digital</h4>
+                        <p class="card-text">Reloj Digital realizado con HTML, CSS y JavaScript Vainilla. Curso Intensivo JavaScript en el Centro de Formación CILSA - Mar del Plata, Año 2021.</p>
+                        <div class="text-center">
+                            <a href="https://relojsimple.netlify.app/" class="btn btn-success">Abrir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4">
+              <div class="card portfolioContent">
+                  <img class="card-img-top" src="img/juego.png" alt="Juego Piedra, papel, tijera" style="width:50%">
+                  <div class="card-body">
+                      <h4 class="card-title">Juego Piedra, Papel, Tijera.</h4>
+                      <p class="card-text">Juego simple, utilizando HTML,CSS y JavaScript Vainilla.</p>
+                      <div class="text-center">
+                          <a href="https://juego-piedrapapeltijera.netlify.app" class="btn btn-success">Abrir</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        </div>
     </section>
 
   <!--FOOTER-->
     <footer id="footer">
+      <div class="container-fluid">
+        <!-- Iconos redes sociales -->
+        <div class="social-icons mt-4">
+            <a href="https://www.linkedin.com/in/daiana-b-caffiero" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/daianacaffiero" target="_blank"><i class="fab fa-brands fa-github-square"></i></a>
+            <a href="mailto:daianacaffiero@gmail.com" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
+            <a href="tel:5492236686495" target="_blank"><i class="fa fa-solid fa-mobile"></i></a>
+            
+        </div>
+    </div>
       <p>Desarrollado por Daiana Caffiero-2023&copy;</p>
     </footer>
 
