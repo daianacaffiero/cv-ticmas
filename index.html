@@ -24,11 +24,10 @@
   <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
       <div class="container">
-        <a class="navbar-brand navlink" id="nombre" href="#">Daiana Belén Caffiero</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
+        <a class="navbar-brand navlink" id="nombreUsuario" href="#">Daiana Belén Caffiero</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item active">
@@ -38,8 +37,14 @@
               <a class="nav-link navlink" href="#estudios">Estudios</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link navlink" href="#idiomas">Idiomas</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link navlink" href="#proyectos">Proyectos</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link navlink" href="#contacto">Contacto</a>
+              </li>
           </ul>
         </div>
       </div>
@@ -68,7 +73,7 @@
                     </div>
                     <div class="col-md-7">
                         <ul>
-                            <li><i class="fa fa-solid fa-phone"></i> <a href="tel:5492236683253" target="_blank">+54 9 223 668-3253</a></li>
+                            <li><i class="fa fa-brands fa-whatsapp"></i> <a href="https://wa.me/5492236683253" target="_blank">+54 9 223 668-3253</a></li>
                             <li><i class="fa fa-solid fa-envelope"></i> <a href="mailto:daianacaffiero@gmail.com" target="_blank">daianacaffiero@gmail.com</a></li>
                             <li><i class="fa fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/daiana-b-caffiero" target="_blank">daiana-b-caffiero</a></li>
                             <li><i class="fa fa-brands fa-github"></i> <a href="https://github.com/daianacaffiero" target="_blank">daianacaffiero</a></li>
@@ -91,7 +96,7 @@
             <div class="col-lg-4 mt-4">
                 <div class="card estudiosText">
                     <div class="card-body">
-                      <i class='estudiosIcon bx bx-code-alt'></i>
+                    <i class='estudiosIcon bx bx-code-alt'></i>
                     <h4 class="card-title mt-3"> Desarrollo Web</h4>
                     <p class="card-text mt-3">Curso Desarrollo Web - Argentina Programa 4.0, dictado por Academia Ticmas. Año 2023</p>
                     </div>
@@ -152,6 +157,44 @@
         </div>
       </div>
     </section>
+
+  <!--IDIOMAS-->
+  <section id="idiomas">
+    <div class="container mt-4">
+        <h1 class="text-center">Idiomas</h1>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card idiomasText">
+                    <div class="card-body text-center">
+                            <img class="idiomasIcon" src="img/spain.ico" alt="">
+                            <h4 class="card-title mt-3"> Español</h4>
+                            <p class="card-text mt-3"> Idioma Nativo </p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card idiomasText">
+                    <div class="card-body text-center">
+                        <img class="idiomasIcon" src="img/estados-unidos.ico" alt="">
+                        <h4 class="card-title mt-3"> Ingles </h4>
+                        <p class="card-text mt-3"> Nivel A1 - A2 </p>
+                    </div>
+                </div>
+            </div>   
+            
+            <div class="col-lg-4 mt-4">
+                <div class="card idiomasText">
+                    <div class="card-body text-center">
+                        <img class="idiomasIcon" src="img/portugal.ico" alt="">
+                        <h4 class="card-title mt-3"> Portugues </h4>
+                        <p class="card-text mt-3"> Nivel A1 - A2 - B1 </p>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+  </section>
 
   <!--SECTION PROYECTOS-->
     <section id="proyectos">
@@ -240,6 +283,33 @@
         </div>
     </section>
 
+  <!--CONTACTO-->
+    <section id="contacto">
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center">Contacto</h1>
+                <div class="col-lg-12">
+                    <!-- formulario -->
+                    <form>
+                        <input type="text" id="nombre" class="form-control form-control mt-3" placeholder="Nombre">
+                        <span id="errorNombre" class="errorNombre">Complete su nombre</span>
+                        <input type="email" id="mail" class="form-control mt-3" placeholder="Email">
+                        <span id="errorEmail" class="errorEmail">Ingrese un email válido</span>
+                        <div class="mb-3 mt-3">
+                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Escriba su mensaje"></textarea>
+                            <span id="errorTexto" class="errorTexto">Deje su comentario</span>
+                        </div>                        
+                    </form>  
+                    <div class="row">
+                        <button type="button" class="btn btn-success mt-2 col-1" onclick="validacion()">Enviar</button>
+                        <span id="mensaje" class="mensaje mt-3 col">Su mensaje ha sido enviado. Muchas gracias por su contacto</span>
+                    </div>       
+
+                </div>
+      
+            </div>
+        </div>
+    </section>
+
   <!--FOOTER-->
     <footer id="footer">
       <div class="container-fluid">
@@ -248,13 +318,13 @@
             <a href="https://www.linkedin.com/in/daiana-b-caffiero" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/daianacaffiero" target="_blank"><i class="fab fa-brands fa-github-square"></i></a>
             <a href="mailto:daianacaffiero@gmail.com" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
-            <a href="tel:5492236686495" target="_blank"><i class="fa fa-solid fa-mobile"></i></a>
+            <a href="https://wa.me/5492236683253" target="_blank"><i class="fa fa-brands fa-whatsapp"></i></a>
             
         </div>
     </div>
       <p>Desarrollado por Daiana Caffiero-2023&copy;</p>
     </footer>
 
-    
+<script src="script.js"></script> 
 </body>
 </html>

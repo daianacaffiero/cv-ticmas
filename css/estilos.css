@@ -5,7 +5,7 @@
     font-size: 20px;
     font-weight: bold;
 }
-#nombre{
+#nombreUsuario{
     font-size: 30px;
 }
 .navlink:hover{
@@ -60,6 +60,23 @@ li{
 .estudiosText:hover {
     border: 1px solid #B052A3;
 }
+
+/* Seccion Idiomas */ 
+#idiomas{
+    background: url(../img/acuarela.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.idiomasIcon{
+    width: 20%;   
+}
+
+.idiomasText.card {
+    height: 190px;
+    cursor: pointer;
+  }
+
  /* Seccion Proyectos */
 #proyectos{
     background: url(../img/hojas.jpg);
@@ -76,12 +93,31 @@ li{
     background-color: #B052A3;
 }
 
+
+/* Seccion Contacto */
+#contacto{
+    background: url(../img/textura.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+/* Estilos de Errores*/
+.errorNombre, .errorEmail, .errorTexto{
+    display: none;
+}
+
+.mensaje{
+    display: none;
+    padding-top: 6px;
+}
+
+  
 /* Iconos redes sociales*/
 .social-icons {
     font-size: 36px;
     cursor: pointer;
 }
-.fa-user:hover, .fa-globe:hover, .fa-map-pin:hover, .fa-linkedin:hover, .fa-phone:hover, .fa-github:hover, .fa-github-square:hover, .fa-envelope:hover, .fa-mobile:hover {
+.fa-user:hover, .fa-globe:hover, .fa-map-pin:hover, .fa-linkedin:hover, .fa-whatsapp:hover, .fa-github:hover, .fa-github-square:hover, .fa-envelope:hover, .fa-mobile:hover {
     color: #B052A3;
 }
 .fab, .fa {
@@ -95,7 +131,7 @@ li{
 }
 
 /* Espacio entre todas las secciones */
-#sobremi, #estudios, #proyectos{
+#sobremi, #estudios, #idiomas, #proyectos, #contacto{
     margin-top: 4rem;
     padding-top: 4rem;
 }
