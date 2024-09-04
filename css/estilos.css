@@ -4,29 +4,28 @@
     font-family: 'Dosis', sans-serif;
     font-size: 20px;
     font-weight: bold;
+    text-decoration: none;
 }
 #nombreUsuario{
     font-size: 30px;
 }
 .navlink:hover{
-    color: white;
-    background-color: darkgray;
-    border-radius: 50%;
+    text-shadow: 1px 1px 2px #555555da;
 }
 
 /* Seccion Sobre mi */
 #sobremi {
-    background: url('../img/acuarela.jpg');
+    background: url(../img/blurred-abstract-background.jpg);
     background-size:cover;
-    position: relative;
-    opacity: 0.92;
-    padding-top: 5px;
+    z-index: -1;
+    padding-top: 0px;
+     
 }
 
 /* Img Sobre mi */
 .imageAboutPage {
     width: 100%;
-    border-radius:250px;
+    border-radius:480px;
 }
 
 li{
@@ -35,8 +34,9 @@ li{
 
 /* Seccion Estudios */
 #estudios {
-    background: url(../img/textura.jpg);
-    background-size: cover;
+    /* background: url(../img/9058885.jpg); */
+    background-color: #a676a3c9;
+    /* background-size: cover; */
     position: relative;
 }
 
@@ -63,7 +63,7 @@ li{
 
 /* Seccion Idiomas */ 
 #idiomas{
-    background: url(../img/acuarela.jpg);
+    background: url(../img/9058885.jpg);
     background-size: cover;
     position: relative;
 }
@@ -79,8 +79,9 @@ li{
 
  /* Seccion Proyectos */
 #proyectos{
-    background: url(../img/hojas.jpg);
-    background-size: cover;
+    /* background: url(../img/hojas.jpg); */
+    /* background-size: cover; */
+    background-color: #a676a3c9;
     position: relative;
 }
 
@@ -117,7 +118,7 @@ li{
     font-size: 36px;
     cursor: pointer;
 }
-.fa-user:hover, .fa-globe:hover, .fa-map-pin:hover, .fa-linkedin:hover, .fa-whatsapp:hover, .fa-github:hover, .fa-github-square:hover, .fa-envelope:hover, .fa-mobile:hover {
+.fa-user:hover, .fa-globe:hover, .fa-map-pin:hover, .fa-linkedin:hover, .fa-whatsapp:hover, .fa-github:hover, .fa-github-square:hover, .fa-envelope:hover, .fa-mobile:hover, .fa-behance:hover {
     color: #B052A3;
 }
 .fab, .fa {
@@ -126,12 +127,12 @@ li{
 
 /* Seccion Footer */
 #footer {
-    background-color: #96D9C6;
+    background-color: #F2D750;
     text-align: center;
 }
 
 /* Espacio entre todas las secciones */
 #sobremi, #estudios, #idiomas, #proyectos, #contacto{
-    margin-top: 4rem;
+    margin-top: 2rem;
     padding-top: 4rem;
 }
